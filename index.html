@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="header">My Library</div>
+
+    <div class="modals">
+        <div class="pls">
+        <h2>Add Book</h2>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">+</button>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="book hidden">
+                <form action="#" class="bookTag" method="get">
+                    <input type="text" id="title" name="title" placeholder="Title" required/>
+                    <input type="text" id="author" name="author" placeholder="Author" required/>
+                    <input type="number" id="pages" name="pages" placeholder="Pages" required/>
+                   <div class="readed">
+                        <label for="read">Have you read it?</label>
+                        <input type="checkbox" name="read" id="read" />
+                   </div>
+                    <button  type="submit" id="add">Add</button>
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="booksTitles"> 
+
+        
+
+    </div>
+
+    <div class="footer">Made by Kukii</div>
+
+<script type="module" src="code.js"></script>
+</body>
+</html>
