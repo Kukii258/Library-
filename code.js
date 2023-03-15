@@ -1,33 +1,34 @@
 const title = document.getElementById('title');
 const author = document.getElementById('author');
 const pages = document.getElementById('pages');
-const button = document.getElementById('add');
+const button = document.querySelector('.bookTag');
 const read = document.getElementById('read');
 const bookTitles = document.querySelector('.booksTitles');
 
 let x = 0;
 let myLibrary = [];
+let Library = [];
 let element = [];
 let gumb = [];
 let remove = [];
 const z = 1;
 
-function book (titlee, authorr, pagess){
-    this.titlee = titlee;
-    this.authorr = authorr;
-    this.pagess = pagess;
-}
 
 
 button.addEventListener('submit',function(e){
-    console.log("heADSFASDGDGDFGADFHDGDAj")
-    myLibrary[x] = new book (title.value, author.value, pages.value, read.value);
+    Library[x] = new book (title.value, author.value, pages.value, read.value);
     addbook(title.value, author.value, pages.value, x, read);
-    x = x +1;
+    x = x + 1;
     title.value = author.value = pages.value = "";
     e.preventDefault();
     modal.style.display = "none";
 })
+
+function book (titlee, authorr, pagess){
+  this.titlee = titlee;
+  this.authorr = authorr;
+  this.pagess = pagess;
+}
 
 function addbook(name, author, pages, x, read){
     bookTitles.appendChild(myLibrary[x] = document.createElement('div'));

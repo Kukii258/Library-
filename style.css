@@ -126,7 +126,7 @@ input{
     margin-bottom: 20px;
 }
 
-button{
+#add, button{
     height: 50px;
     width: 100px;
     border-radius: 10%;
